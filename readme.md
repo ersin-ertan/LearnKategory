@@ -41,10 +41,11 @@ Kategory has functional datatypes & functional abstractions.
 * Add `compile 'io.kategory:kategory:0.4.0'` in the dependencies {}
 
 ### Conceptual Understanding
-* Replace conceptual understandings with functional datatypes
+* Bottom up approach because top down is via Category theory
+* First, goto glossary and replace conceptual understandings with functional datatypes
 
 
-[1]:www.google.com
+[1]:https://github.com/ersin-ertan/LearnKategory/tree/master/src/main/kotlin/A_Glossary
 [2]:www.google.com
 [3]:www.google.com
 [4]:www.google.com
