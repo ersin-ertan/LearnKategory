@@ -5,14 +5,14 @@ Kategory has functional datatypes & functional abstractions.
 
 <details>
 <summary>Why functional?</summary>
-<br>
+</br>
 
 * Referential Transparency: functions have defined parameters and return types, and only operate on the input without modifying values outside of the functions scope
 * Purity: Idempotent/deterministic/pure function. Repeated calls to a function yield the same result if the function parameter is unchanged
 * Separation of Concerns: Computation is declarative and deferred, with specific nesting and ordering via a tree structure. Runtime evaluation provides the semantic
 * goto Conceptual Understanding
 
-<details>
+</details>
 
 ### Contents
 
