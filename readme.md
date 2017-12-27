@@ -41,26 +41,28 @@ Kategory has functional datatypes & functional abstractions.
 * Add `compile 'io.kategory:kategory:0.4.0'` in the dependencies {}
 
 ### Conceptual Understanding
-* Bottom up approach because top down is via Category theory
-* First, goto glossary and replace conceptual understandings with functional datatypes
+* Assumes you know kotlin
+* Bottom up approach because top down is via Category theory/too abstract
+* First, goto glossary and replace old code concept knowledge with functional datatypes
+* Now we have basic control of functional style abstractions and thinking
 
 
 [1]:https://github.com/ersin-ertan/LearnKategory/tree/master/src/main/kotlin/A_Glossary
-[2]:www.google.com
-[3]:www.google.com
-[4]:www.google.com
-[5]:www.google.com
-[6]:www.google.com
-[7]:www.google.com
-[8]:www.google.com
-[9]:www.google.com
-[10]:www.google.com
-[11]:www.google.com
-[12]:www.google.com
-[13]:www.google.com
-[14]:www.google.com
-[15]:www.google.com
-[16]:www.google.com
-[17]:www.google.com
-[18]:www.google.com
-[19]:www.google.com
+[2]:https://github.com/ersin-ertan/LearnKategory/blob/master/src/main/kotlin/A_Glossary/datatypes
+[3]:https://github.com/ersin-ertan/LearnKategory/blob/master/src/main/kotlin/A_Glossary/datatypes/A_Option.kt
+[4]:https://github.com/ersin-ertan/LearnKategory/blob/master/src/main/kotlin/A_Glossary/datatypes/B_Either.kt
+[5]:a
+[6]:a
+[7]:a
+[8]:a
+[9]:a
+[10]:a
+[11]:a
+[12]:a
+[13]:a
+[14]:a
+[15]:a
+[16]:a
+[17]:a
+[18]:a
+[19]:a

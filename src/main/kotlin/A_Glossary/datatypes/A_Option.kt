@@ -1,36 +1,10 @@
-package A_Glossary
+package A_Glossary.datatypes
 
 import kategory.*
 import p
 import pp
 
 fun main(args: Array<String>) {
-//    usingOption()
-    usingEither()
-}
-
-fun usingEither() {
-
-    // thrown exceptions unknown to the compiler, and require you to search through source to see what can be thrown-caught
-
-    // make the fact that an error can be thrown explicit via the functions type. Either used to fail fast.
-
-    // Left is error, right is right
-    fun isError(b: Boolean): Either<String, Int> = if (b) Either.Left("left error string") else Either.Right(99)
-
-    isError(true).p()
-    isError(false).p()
-
-    // flatmap is right biased, an applies the function only if there is a right value
-    isError(false).flatMap { Either.Right(it + 1) }.pp()
-    isError(true).flatMap { Either.Right(it + 10) }.p()
-
-
-
-}
-
-fun usingOption() {
-
     // Option can be returned and used in different ways
 
     fun returnString(b: Boolean): Option<String> = if (b) Option("a string") else Option.empty()
@@ -90,7 +64,4 @@ fun usingOption() {
         val b = none<String>().bind() // including a none regardless of position, makes the result None
         yields(a + b)
     }.p()
-
-
 }
-
