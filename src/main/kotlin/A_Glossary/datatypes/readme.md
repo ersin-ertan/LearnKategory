@@ -13,14 +13,14 @@ To solve NullPointerException like kotlin's null safe ?
 * applicative: a typeclass that places values into a container(Pair or Tuple2) while maintaining the original container, where Some(a) and Some(b) become Some(Tuple2(a, b))
 * monad: a type class that allows you to sequentially build a value to be placed within a container
 
-[Either: branching][2]
+[Either][2]: branching
 To solve thrown exceptions
 
 * abstract data type(ADT): encapsulating a concept into a type, allowing us to provide operations if needed
 
-[Try: catching exceptions][3]
+[Try][3]: catching exceptions
 
-[IO: interaction with program platform][4]
+[IO][4]: interaction with program platform
 
 [1]:https://github.com/ersin-ertan/LearnKategory/blob/master/src/main/kotlin/A_Glossary/datatypes/A_Option.kt
 [2]:https://github.com/ersin-ertan/LearnKategory/blob/master/src/main/kotlin/A_Glossary/datatypes/B_Either.kt
