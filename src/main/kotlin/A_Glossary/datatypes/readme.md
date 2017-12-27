@@ -11,14 +11,20 @@ To solve NullPointerException like kotlin's null safe ?
 * typeclass: like a java interface, defining behaviour without an instance, but rather a type for the compiler
 * functor: a typeclass that allows you to call map on the contents of container(Some), without having to manually extract the value, call map, then repopulate the container.
 * applicative: a typeclass that places values into a container(Pair or Tuple2) while maintaining the original container, where Some(a) and Some(b) become Some(Tuple2(a, b))
+* binding: 
 * monad: a type class that allows you to sequentially build a value to be placed within a container
 
 [Either][2]: branching
-To solve thrown exceptions
+To solve thrown exceptions within a system you are writing
 
 * abstract data type(ADT): encapsulating a concept into a type, allowing us to provide operations if needed
 
 [Try][3]: catching exceptions
+To solve thrown exceptions from systems outside your control/visibility
+
+* recover: like getOrElse, but with the exception passed into the function
+* recoverWith: encapsulates your backup try for when the first try throws an exception
+* transform: like fold and recoverWith, where both functions must try again but with switch semantic, so success is the left function and failure is the right
 
 [IO][4]: interaction with program platform
 

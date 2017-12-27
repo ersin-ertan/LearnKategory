@@ -1,9 +1,6 @@
 package A_Glossary.datatypes
 
-import kategory.Either
-import kategory.contains
-import kategory.flatMap
-import kategory.getOrElse
+import kategory.*
 import p
 import pp
 
@@ -90,6 +87,24 @@ fun main(args: Array<String>) {
     ("your weight getOrElse is " + guessWeightGivenHeight2(-4).getOrElse { 70 }).pp()
 
 
+    // and as seen before you can fold, functor, applicative, monad
+    guessWeightGivenHeight2(-4).fold({1}, {2}).pp()
+    guessWeightGivenHeight2(4).fold({1}, {2}).pp()
+
+    1.left().fold({"a"},{"b"}).pp()
+
+    // but note that functor, applicative, monad, require the type parameter for any Either.Left usage
+    Either.functor<Int>().map(Either.Right(1), {it + 1}).pp()
+
+    Either.applicative<Int>().tupled(Either.Right(1), Either.Right("a")).pp()
+
+    // this doesn't work because Left return type is Nothing
+    /*Either.monad<Int>().binding{
+        val a = Either.Left(1).bind()
+        val b = Either.Right(1 + a).bind()
+        val c = Either.Right(4).bind()
+        yields(a + b + c)
+    }.pp()*/
 }
 
 sealed class WeightHeightGuessError {
