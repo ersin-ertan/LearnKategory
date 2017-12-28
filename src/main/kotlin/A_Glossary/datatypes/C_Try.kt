@@ -67,14 +67,6 @@ fun main(args: Array<String>) {
     doC.fold({ canBeOmitted -> listOf(1) }, { it.plus("d") }).pp()
     doD.fold({ listOf(1, 2) }, { it.plus("d").plus("e") }).p()
 
-    // like fold and recoverWith where both functions can try again
-    doC.transform({ Try { listOf(1) } }, { Try { listOf(1, 2) } }).pp()
-    doD.transform({ Try { listOf(1, 2, 3) } }, { Try { listOf(1, 2, 3, 4) } }).p()
-
-    doC.transform({ Try { listOf(1) } }, { doD }).pp()
-    doD.transform({ doD }, { Try { listOf(1, 2, 3, 4) } }).p()
-
-
 //    Functor, Applicative, Monad examples
 
     Try.functor().map(Try { "3".toInt() }, { it + 1 }).pp()

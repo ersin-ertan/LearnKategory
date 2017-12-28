@@ -21,6 +21,7 @@ Kategory has functional datatypes & functional abstractions.
     * [Option][3]
     * [Either][4]
     * [Try][5]
+    * [Functional Error Handling][6]
     * [IO][6]
   * [Typeclasses][7]
     * [Eq][8]
@@ -43,7 +44,10 @@ Kategory has functional datatypes & functional abstractions.
 ### Conceptual Understanding
 * Assumes you know kotlin
 * Bottom up approach because top down is via Category theory/too abstract
-* First, goto glossary and replace old code concept knowledge with functional datatypes
+* First, goto glossary and replace old code concept knowledge with functional datatypes for Option, Either, and Try
+* Then do functional error handling practice within the datatypes package
+* TODO Introduce monadic comprehension before MonadError
+* Go to the typeclass MonadError to learn about error handling inside of monadic contexts
 * Now we have basic control of functional style abstractions and thinking
 
 
